@@ -1,13 +1,4 @@
-from fastapi import FastAPI
+# main.py - 根级入口，兼容 `uvicorn main:app` 启动方式
+from app.main import app
 
-app = FastAPI()
-
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
+__all__ = ["app"]

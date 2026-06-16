@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.egg
+
+# uv / venv
+.venv/
+
+# 环境变量（含 API Key）
+.env
+
+# 运行时数据（SQLite + Chroma）
+data/*
+!data/.gitkeep
+
+# 生成文件输出
+storage/*
+!storage/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
